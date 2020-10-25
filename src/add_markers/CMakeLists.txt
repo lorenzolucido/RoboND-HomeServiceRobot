@@ -69,7 +69,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   visialization_msgs
+#   visualization_msgs
 # )
 
 ################################################
@@ -104,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES add_markers
-#  CATKIN_DEPENDS roscpp visialization_msgs
+#  CATKIN_DEPENDS roscpp visualization_msgs
 #  DEPENDS system_lib
 )
 
@@ -134,6 +134,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/add_markers.cpp)
 add_executable(add_markers src/add_markers.cpp)
+add_executable(add_markers_simple src/add_markers_simple.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -150,6 +151,7 @@ add_executable(add_markers src/add_markers.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(add_markers ${catkin_LIBRARIES})
+target_link_libraries(add_markers_simple ${catkin_LIBRARIES})
 
 #############
 ## Install ##
