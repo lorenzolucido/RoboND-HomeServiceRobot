@@ -18,9 +18,9 @@ In this project, we put together all modules that we have seen previously during
 
 ## Results
 Below are 2 views of the map used (gazebo view & top view):
-![RoboND-GazboMap](RoboND-GazboMap.png)
-![RoboND-Map2](RoboND-Map2.png)
+![RoboND-GazboMap](RoboND-GazboMap.PNG)
+![RoboND-Map2](RoboND-Map2.PNG)
 
 The robot behaves as expected: it finds its path from the start to the pick-up zone, spends 5 seconds simulating the time to pick-up the object, then heads to the drop-off zone for delivery, the below RViZ captures shows the path planning from start to the pickup zone, as well as when the robot in on the road to delivery:
-![RoboND-RViz](RoboND-RViz.png)
-![RoboND-RViz2](RoboND-RViz2.png)
+![RoboND-RViz](RoboND-RViz.PNG)
+![RoboND-RViz2](RoboND-RViz2.PNG)
